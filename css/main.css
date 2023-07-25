@@ -118,7 +118,7 @@ header {
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: #16233c;
+  background-color: #050621;
   padding: 40px 0 25px;
   color: #fff;
   font-family: "Montserrat", sans-serif;
@@ -175,4 +175,38 @@ header .inner .contact {
 
 header .inner .contact:hover {
   color: #338af1;
+}
+
+/*  contents */
+
+.contents {
+  background-color: #050621;
+}
+.contents .visual {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.contents .visual .space {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.contents .visual .title {
+  width: 100%;
+
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #43546c;
+  font-size: 70px;
+  text-shadow: 0 0 10px rgba(1, 1, 1, 0.3);
 }
