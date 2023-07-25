@@ -199,7 +199,6 @@ header .inner .contact:hover {
 
 .contents .visual .title {
   width: 100%;
-
   position: absolute;
   left: 0;
   top: 50%;
@@ -234,7 +233,7 @@ header .inner .contact:hover {
 .text a {
   font-family: "Montserrat", sans-serif;
   display: inline-block;
-
+  color: #aeb0b880;
   padding: 5px 15px;
   border: 1px solid #333;
   border-radius: 5px;
@@ -265,6 +264,9 @@ section.about .inner .text p {
   font-size: 40px;
 }
 
+section.about .inner .title {
+  color: #aeb0b880;
+}
 /* section approach */
 
 section.approach {
@@ -281,6 +283,7 @@ section.approach .inner .list {
 section.approach .inner .list li {
   margin-bottom: 30px;
 }
+
 section.approach .inner .list li:last-child {
   margin-bottom: 0;
 }
@@ -303,7 +306,7 @@ section.approach .inner .fix {
   height: 100%;
   right: 0;
   top: 0;
-  color: #fff;
+  color: #aeb0b880;
 }
 
 section.approach .inner .fix .text {
@@ -315,4 +318,9 @@ section.approach .inner .fix .text.on {
   position: fixed;
   bottom: 50%;
   transform: translateY(50%);
+}
+
+h4 {
+  margin-top: 15px;
+  color: #338af1;
 }
