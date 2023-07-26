@@ -222,6 +222,7 @@ header .inner .contact:hover {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: bold;
+  color: #aeb0b880;
 }
 
 .text p {
@@ -264,9 +265,6 @@ section.about .inner .text p {
   font-size: 40px;
 }
 
-section.about .inner .title {
-  color: #aeb0b880;
-}
 /* section approach */
 
 section.approach {
@@ -323,4 +321,63 @@ section.approach .inner .fix .text.on {
 h4 {
   margin-top: 15px;
   color: #338af1;
+}
+
+/* section sectors */
+
+section.sectors {
+  background-color: #070814;
+  padding: 100px 0 240px;
+  position: relative;
+  margin-bottom: 260px;
+}
+
+section.sectors .list {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 1400px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section.sectors .list li {
+  width: 31%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+section.sectors .list li a {
+  display: block;
+  position: relative;
+}
+
+section.sectors .list li a img {
+  width: 100%;
+  transition: all 0.4s;
+}
+
+section.sectors .list li a h3 {
+  position: absolute;
+  left: 50%;
+  top: 78%;
+  color: #43546c;
+  transform: translatex(-50%);
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.4s;
+}
+
+section.sectors .list li a:hover,
+section.sectors .list li a:focus {
+  transform: scale(1.05);
+  transition: all 0.4s;
+}
+
+section.sectors .list li a:hover h3,
+section.sectors .list li a:focus h3 {
+  letter-spacing: 4px;
+  transition: all 0.5s;
 }
