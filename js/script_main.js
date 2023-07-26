@@ -6,6 +6,7 @@ $(window).on("scroll resize", function () {
   scrollPos = $(document).scrollTop();
   fix();
   fixHeader();
+  fixList();
 
   function fix() {
     if (scrollPos > 1250) {
@@ -23,6 +24,29 @@ $(window).on("scroll resize", function () {
       $("header").addClass("on");
     } else {
       $("header").removeClass("on");
+    }
+  }
+
+  function fixList() {
+    $("section.approach .inner .list li a").removeClass("on");
+    if (scrollPos > 1250) {
+      $("section.approach .inner .list li a").removeClass("on");
+      $("section.approach .inner .list li:eq(0) a").addClass("on");
+    }
+    if (scrollPos > 1650) {
+      $("section.approach .inner .list li a").removeClass("on");
+      $("section.approach .inner .list li:eq(1) a").addClass("on");
+    }
+    if (scrollPos > 2050) {
+      $("section.approach .inner .list li a").removeClass("on");
+      $("section.approach .inner .list li:eq(2) a").addClass("on");
+    }
+    if (scrollPos > 2450) {
+      $("section.approach .inner .list li a").removeClass("on");
+      $("section.approach .inner .list li:eq(3) a").addClass("on");
+    }
+    if (scrollPos > 2850) {
+      $("section.approach .inner .list li a").removeClass("on");
     }
   }
 });
